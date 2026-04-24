@@ -1,0 +1,1699 @@
+@font-face {
+	font-family: "Nunito";
+	src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+@property --primaryColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #c5db3b;
+}
+@property --footerTextColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: rgba(255, 255, 255, 0.6);
+}
+@property --buttonTextColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #231a1e;
+}
+@property --allTextColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #ffffff;
+}
+
+
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #302429;
+	margin: 0;
+	font-family: "Nunito";
+}
+
+
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+.header_content,
+.footer_section,
+.main_section,
+.hero_overlay_container {
+	width: 992px;
+	margin: 0 auto;
+}
+
+
+
+
+
+.header_content_wrap,
+.footer_section_wrap {
+	padding: 0 16px;
+}
+
+
+
+
+
+.navbar_links_container,
+.footer_navbar_links_container {
+	align-items: center;
+	display: flex;
+}
+
+.navbar_links_container ul,
+.footer_navbar_links_container ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 32px;
+}
+
+.navbar_links_container ul li,
+.footer_navbar_links_container ul li {
+	list-style: none;
+}
+
+.event_info::after,
+.games_preview::after,
+.location_section::after,
+.nearby_section::after {
+	content: "";
+	background-color: var(--primaryColour);
+	height: 3px;
+	display: block;
+	width: 100px;
+	margin: 20px auto 0; 
+}
+
+
+
+
+
+.location_card h3,
+.group_heading h3,
+.event_grid div h3,
+.booking_highlight h3,
+.format_card h3,
+.game_quick_card h3,
+.game_room_card h3 {
+	color: var(--primaryColour);
+	text-transform: uppercase;
+}
+
+
+
+
+
+.nearby_intro h2,
+.booking_intro h2 {
+	margin: 26px 0 16px;
+}
+
+
+
+
+
+.event_info h2,
+.games_preview h2,
+.location_intro h2,
+.nearby_intro h2,
+.booking_intro h2,
+.contact_map_intro h2,
+.section_heading h2 {
+	letter-spacing: 2px;
+	text-align: center;
+	color: var(--allTextColour);
+	font-size: 32px;
+}
+
+
+
+
+
+.location_intro p,
+.nearby_intro p,
+.booking_intro p,
+.contact_hero p,
+.contact_map_intro p,
+.section_heading p {
+	font-size: 16px;
+	line-height: 1.7;
+	margin: 0;
+	text-align: center;
+	color: var(--footerTextColour);
+}
+
+
+
+
+
+.location_card,
+.map_container,
+.nearby_card,
+.booking_highlight,
+.booking_form_wrap,
+.contact_map_wrap,
+.support_card,
+.contact_form_wrap,
+.event_grid div,
+.game_quick_card,
+.format_card,
+.game_room_card,
+.gallery_item,
+.video_embed_wrap {
+	background: linear-gradient(145deg, #1f1a1d, #2a2226);
+}
+
+
+
+
+
+.map_container,
+.nearby_card,
+.contact_info_card,
+.support_card,
+.contact_map_wrap,
+.game_quick_card,
+.format_card  {
+	border: 1px solid rgba(255,255,255,0.05);
+}
+
+
+
+
+
+
+.map_container,
+.contact_map_wrap {
+	box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+
+
+
+
+.location_card,
+.nearby_card {
+	box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+
+
+
+
+.contact_info_card,
+.support_card,
+.game_quick_card,
+.gallery_item,
+.format_card {
+	box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+
+
+
+
+.booking_form_wrap,
+.contact_form_wrap,
+.video_embed_wrap,
+.game_room_card {
+	box-shadow: 0 14px 35px rgba(0,0,0,0.4);
+}
+
+
+
+
+
+.booking_form_wrap,
+.contact_form_wrap,
+.game_room_card {
+	border: 1px solid rgba(197, 219, 59, 0.08);
+}
+
+
+
+
+
+.hero_overlay a:hover,
+.booking_button:hover,
+.contact_button:hover,
+.game_cta_button:hover,
+.location_button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 12px 24px rgba(197, 219, 59, 0.18);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** / HEADER SECTION */
+
+.header_section {
+	width: 100%;
+	height: 95px;
+	position: relative;
+	z-index: 5;
+	background: url(../graphics/header/bg_header.png) repeat-x center top;
+	margin: 25px 0 0 0;
+	display: flex;
+	align-items: center;
+}
+
+.header_content_wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* // HEADER SECTION ********************/
+
+
+
+
+
+
+
+
+
+/******************** / LOGO SECTION */
+
+.logo_container {
+	height: 47px;
+	width: auto;
+}
+
+.logo_container a img {
+	height: 100%;
+	object-fit: cover;
+}
+
+/* // LOGO SECTION ********************/
+
+
+
+
+
+
+
+
+
+/******************** / NAVBAR SECTION */
+
+.navbar_links_container ul li a {
+	color: var(--primaryColour);
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 8px 16px;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+/* // NAVBAR SECTION ********************/
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** / HERO SECTION */
+
+.slider_wrap {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+	margin: -120px 0 0 0;
+}
+
+.slider_container > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 720px;
+  opacity: 0;
+  transition: opacity 2s ease;
+	display: flex;
+	justify-content: center;
+}
+
+.slider_container > div.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slider_1 img,
+.slider_2 img,
+.slider_3 img {
+	width: 1400px;
+	height: 100%;
+	object-fit: cover;
+	object-position: center top;
+}
+
+.slider_1 {
+	background: linear-gradient( to right, rgba(15, 14, 20, 1) 25%, rgba(15, 20, 24, 1) 100%);
+	
+}
+
+.slider_2 {
+	background: linear-gradient( to right, rgba(255, 188, 0, 1) 25%, rgba(248, 246, 249, 1) 75%);
+}
+
+.slider_3 {
+	background: linear-gradient( to right, rgba(22, 22, 20, 1) 25%, rgba(255, 255, 255, 1) 75%);
+}
+
+.hero_overlay_container {
+	position: relative;
+	z-index: 10;
+	top: 55%;
+}
+
+.hero_overlay {
+	background-color: rgba(69, 52, 59, 0.8);
+	padding: 32px;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.hero_overlay h1 {
+	margin: 16px 0 0 0;
+	font-weight: 600;
+}
+
+.hero_overlay p {
+	margin: 0;
+}
+
+.hero_overlay a {
+	background-color: var(--primaryColour);
+	padding: 12px 24px;
+	font-weight: 700;
+	display: inline-block;
+	width: max-content;
+	color: var(--buttonTextColour);
+	transition: 0.3s ease;
+}
+
+
+/* // HERO SECTION ********************/
+
+
+
+
+
+
+
+
+
+
+.connecting_step {
+	width: 100%;
+	height: 52px;
+	background: url(../graphics/main/bg_body_top.png) repeat-x top;
+	margin: -30px 0 0 0;
+	position: relative;
+	z-index: 800;
+}
+
+
+
+
+
+
+
+
+
+
+/******************** / MAIN SECTION */
+
+main {
+	background-color: #302429;
+}
+
+.main_section {
+	min-height: 95vh;
+}
+
+
+
+
+
+
+
+
+
+
+.event_info {
+	padding: 60px 0;
+	position: relative;
+}
+
+.event_info h2 {
+	margin: 24px 0 40px 0;
+}
+
+.event_grid {
+	display: flex;
+	gap: 32px;
+	justify-content: center;
+}
+
+.event_grid div {
+	padding: 30px;
+	border-radius: 12px;
+	width: 250px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+	text-align: center;
+}
+
+.event_grid div h3 {
+	letter-spacing: 1px;
+	margin: 18px 0 10px 0;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.event_grid div p {
+	color: var(--allTextColour);
+	font-size: 16px;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.games_preview {
+	padding: 80px 0;
+}
+
+.games_preview h2 {
+	margin: 24px 0 50px 0;
+}
+
+.games_grid {
+	display: flex;
+	gap: 32px;
+}
+
+.game_card {
+	height: 350px;
+	width: 100%;
+	border-radius: 12px;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.game_card .overlay,
+.game_page_hero_overlay {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3));
+	padding: 25px;
+	
+}
+
+.game_card .overlay h3 {
+	font-size: 22px;
+	color: var(--allTextColour);
+	margin: 0 0 8px 0;
+}
+
+.game_card .overlay p {
+	font-size: 15px;
+	color: var(--footerTextColour);
+	margin: 0 0 15px 0;
+}
+
+.game_card .overlay span {
+	color: var(--primaryColour);
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.games_grid .cs2 {
+	background-image: url(../graphics/home/game_wrap_1.jpg);
+}
+
+.games_grid .smash {
+	background-image: url(../graphics/home/game_wrap_2_1.jpg);
+}
+
+.games_grid .r6 {
+	background-image: url(../graphics/home/game_wrap_3.jpg);
+}
+
+.game_card:hover {
+	transform: scale(1.05);
+	transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+.location_section,
+.nearby_section {
+	padding: 90px 0;
+}
+
+.location_intro {
+	margin: 0 auto 50px;
+}
+
+.location_intro h2 {
+	margin: 26px 0 16px 0;
+}
+
+.location_info {
+	width: 38%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.location_content {
+	display: flex;
+	gap: 32px;
+}
+
+.location_card {
+	padding: 24px;
+	border-radius: 12px;
+	border: 1px solid rgba(197, 219, 59, 0.078);
+}
+
+.location_card h3 {
+	margin: 0 0 10px 0;
+	font-size: 16px;
+}
+
+.location_card p {
+	color: var(--allTextColour);
+	font-size: 15px;
+	margin: 0;
+	line-height: 1.6;
+}
+
+.location_info :nth-child(3) p:nth-of-type(1) span {
+	display: block;
+}
+
+.location_links {
+	display: flex;
+	gap: 16px;
+	margin: 8px 0 0 0;
+}
+
+.location_button {
+	background-color: var(--primaryColour);
+	color: var(--buttonTextColour);
+	padding: 14px 22px;
+	border-radius: 8px;
+	font-weight: 700;
+	transition: 0.3s ease;
+}
+
+.location_button.secondary {
+	background: transparent;
+	color: var(--allTextColour);
+	border: 1px solid rgba(255,255,255,0.15);
+}
+
+.location_button.secondary:hover {
+	border-color: rgba(197, 219, 59, 0.4);
+	color: var(--primaryColour);
+}
+
+.map_container {
+	width: 62%;
+	padding: 12px;
+	border-radius: 16px;
+}
+
+.map_container iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	border: 0;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+.nearby_categories {
+	display: flex;
+	flex-direction: column;
+	gap: 55px;
+}
+
+.nearby_intro {
+	margin: 0 auto 50px;
+}
+
+.nearby_group {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.group_heading h3 {
+	font-size: 24px;
+	margin: 0 0 6px 0;
+	letter-spacing: 1px;
+}
+
+.group_heading p {
+	color: var(--footerTextColour);
+	margin: 0;
+	font-size: 14px;
+}
+
+.nearby_cards {
+	display: flex;
+	gap: 24px;
+}
+
+.nearby_card {
+	padding: 26px;
+	border-radius: 14px;
+	width: 100%;
+	transition: 0.35s ease;
+	overflow: hidden;
+}
+
+.tag {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	color: var(--buttonTextColour);
+	background: var(--primaryColour);
+	padding: 6px 10px;
+	border-radius: 100px;
+	margin-bottom: 18px;
+}
+
+.nearby_card h4 {
+	color: var(--allTextColour);
+	font-size: 20px;
+	margin: 0 0 12px 0;
+	line-height: 1.3;
+}
+
+.nearby_card p {
+color: var(--footerTextColour);
+font-size: 15px;
+line-height: 1.7;
+margin: 0;
+}
+
+.nearby_card:hover {
+	transform: translateY(-8px);
+	border-color: rgba(197, 219, 59, 0.2);
+	box-shadow: 0 18px 35px rgba(0,0,0,0.45);
+}
+
+
+
+
+
+
+
+
+
+.booking_section {
+	padding: 100px 0 120px;
+}
+
+.booking_intro {
+	margin: 0 auto 60px;
+}
+
+.booking_content {
+	display: flex;
+	gap: 36px;
+}
+
+.booking_info {
+	width: 38%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.booking_highlight {
+	padding: 28px;
+	border-radius: 14px;
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+	border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.booking_highlight h3 {
+	font-size: 18px;
+	margin: 0 0 18px 0;
+	letter-spacing: 1px;
+}
+
+.booking_highlight ul {
+	padding-left: 18px;
+	margin: 0;
+}
+
+.booking_highlight ul li {
+	color: var(--allTextColour);
+	margin-bottom: 12px;
+	line-height: 1.6;
+	font-size: 15px;
+}
+
+.booking_highlight p {
+	color: var(--allTextColour);
+	margin: 0 0 12px 0;
+	line-height: 1.7;
+	font-size: 15px;
+}
+
+.booking_highlight p:last-child {
+	margin-bottom: 0;
+}
+
+.booking_form_wrap {
+	width: 62%;
+	padding: 34px;
+	border-radius: 16px;
+}
+
+.booking_form {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.form_row {
+	display: flex;
+	gap: 20px;
+}
+
+.form_row .form_group {
+	width: 100%;
+}
+
+.form_group label {
+	display: block;
+	color: var(--allTextColour);
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	letter-spacing: 0.4px;
+}
+
+.form_group input,
+.form_group select,
+.form_group textarea {
+	width: 100%;
+	padding: 15px 16px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,0.08);
+	background: #171316;
+	color: var(--allTextColour);
+	font-family: "Nunito";
+	font-size: 15px;
+	outline: none;
+	box-sizing: border-box;
+	transition: 0.3s ease;
+}
+
+.form_group input::placeholder,
+.form_group textarea::placeholder {
+	color: rgba(255,255,255,0.4);
+}
+
+.form_group input:focus,
+.form_group select:focus,
+.form_group textarea:focus {
+	border-color: rgba(197, 219, 59, 0.6);
+	box-shadow: 0 0 0 3px rgba(197, 219, 59, 0.08);
+}
+
+.form_group textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+
+.checkbox_group {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.checkbox_group input {
+	width: auto;
+	margin-top: 4px;
+}
+
+.checkbox_group label {
+	margin-bottom: 0;
+	font-weight: 500;
+	color: var(--footerTextColour);
+	line-height: 1.6;
+}
+
+.booking_button {
+	background: var(--primaryColour);
+	color: var(--buttonTextColour);
+	border: none;
+	padding: 16px 22px;
+	border-radius: 10px;
+	font-family: "Nunito";
+	font-size: 15px;
+	font-weight: 800;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact_hero {
+	text-align: center;
+	padding: 90px 0 70px;
+}
+
+.contact_hero h1 {
+	font-size: 42px;
+	margin: 0 0 18px 0;
+	letter-spacing: 2px;
+	color: var(--allTextColour);
+}
+
+.contact_info_section {
+	padding-bottom: 80px;
+}
+
+.contact_info_grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+}
+
+.contact_info_card {
+	width: 100%;
+	padding: 28px;
+	border-radius: 14px;
+	box-sizing: border-box;
+}
+
+.contact_info_card h3 {
+	color: var(--primaryColour);
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0 0 10px 0;
+}
+
+.contact_info_card p {
+	color: var(--allTextColour);
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0 0 8px 0;
+	line-height: 1.4;
+}
+
+.contact_info_card span {
+	color: var(--footerTextColour);
+	font-size: 14px;
+	line-height: 1.6;
+	display: block;
+}
+
+/* MAIN CONTACT AREA */
+.contact_main_section {
+	display: flex;
+	gap: 36px;
+	padding-bottom: 100px;
+}
+
+/* LEFT SIDE */
+.contact_support_info {
+	width: 38%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.support_card {
+	padding: 28px;
+	border-radius: 14px;
+}
+
+.support_card h2,
+.support_card h3 {
+	color: var(--primaryColour);
+	margin: 0 0 16px 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.support_card h2 {
+	font-size: 24px;
+}
+
+.support_card h3 {
+	font-size: 18px;
+}
+
+.support_card p {
+	color: var(--footerTextColour);
+	font-size: 15px;
+	line-height: 1.8;
+	margin: 0;
+}
+
+.support_card ul {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.support_card ul li {
+	color: var(--footerTextColour);
+	font-size: 15px;
+	line-height: 1.8;
+	margin-bottom: 10px;
+}
+
+/* FORM */
+.contact_form_wrap {
+	width: 62%;
+	padding: 34px;
+	border-radius: 16px;
+}
+
+.contact_form {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.contact_button {
+	background: var(--primaryColour);
+	color: var(--buttonTextColour);
+	border: none;
+	padding: 16px 22px;
+	border-radius: 10px;
+	font-family: "Nunito";
+	font-size: 15px;
+	font-weight: 800;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+/* MAP */
+.contact_map_section {
+	padding-bottom: 120px;
+}
+
+.contact_map_intro {
+	margin: 0 auto 40px;
+}
+
+.contact_map_intro h2 {
+	margin: 0 0 16px 0;
+}
+
+.contact_map_wrap {
+	padding: 12px;
+	border-radius: 16px;
+}
+
+.contact_map_wrap iframe {
+	width: 100%;
+	height: 460px;
+	border: 0;
+	border-radius: 12px;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/******************** / INDIVIDUAL GAME PAGES */
+
+/* HERO */
+.game_page_hero {
+	height: 500px;
+	border-radius: 18px;
+	overflow: hidden;
+	margin: 80px 0 70px;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.cs2_theme {
+	background-image: url('../graphics/hero-carousel/counter-stike_carousel_1_1.jpg');
+}
+
+.r6_theme {
+	background-image: url('../graphics/hero-carousel/rainbow-six-siege_carousel_3_1.jpg');
+}
+
+.smash_theme {
+	background-image: url('../graphics/hero-carousel/super-smash-bros_carousel_2_1.png');
+}
+
+.game_page_hero_overlay {
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+}
+
+.game_label {
+	display: inline-block;
+	background: var(--primaryColour);
+	color: var(--buttonTextColour);
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 8px 12px;
+	border-radius: 999px;
+	margin: 0 0 18px 0;
+	width: fit-content;
+}
+
+.game_page_hero_overlay h1 {
+	color: var(--allTextColour);
+	font-size: 54px;
+	margin: 0 0 14px 0;
+	line-height: 1.1;
+}
+
+.game_subtitle {
+	color: var(--footerTextColour);
+	font-size: 17px;
+	line-height: 1.8;
+	margin: 0;
+}
+
+/* SHARED SECTION HEADING */
+.section_heading {
+	margin: 0 auto 45px;
+}
+
+.section_heading h2 {
+	margin: 0 0 14px 0;
+}
+
+/* QUICK INFO */
+.game_quick_info {
+	padding-bottom: 90px;
+}
+
+.game_quick_grid {
+	display: flex;
+	gap: 24px;
+}
+
+.game_quick_card {
+	width: 100%;
+	padding: 28px;
+	border-radius: 14px;
+}
+
+.game_quick_card h3 {
+	color: var(--primaryColour);
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0 0 10px 0;
+}
+
+.game_quick_card p {
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+	line-height: 1.5;
+}
+
+/* ABOUT */
+.game_about_section {
+	padding-bottom: 100px;
+}
+
+.game_about_content {
+	display: flex;
+	gap: 36px;
+	align-items: center;
+}
+
+.game_about_text {
+	width: 52%;
+}
+
+.game_about_text h2 {
+	color: white;
+	font-size: 34px;
+	margin: 0 0 22px 0;
+	letter-spacing: 1px;
+}
+
+.game_about_text p {
+	color: var(--footerTextColour);
+	font-size: 16px;
+	line-height: 1.9;
+	margin: 0 0 20px 0;
+}
+
+.game_about_image {
+	width: 48%;
+}
+
+.game_about_image img {
+	width: 100%;
+	height: 420px;
+	object-fit: cover;
+	border-radius: 16px;
+	display: block;
+	box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* GALLERY */
+.game_gallery_section {
+	padding-bottom: 100px;
+}
+
+.game_gallery_grid {
+	display: flex;
+	gap: 24px;
+}
+
+.gallery_item {
+	width: 100%;
+	padding: 10px;
+	border-radius: 16px;
+}
+
+.gallery_item img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 12px;
+	display: block;
+}
+
+/* VIDEO */
+.game_video_section {
+	padding-bottom: 100px;
+}
+
+.video_embed_wrap {
+	padding: 12px;
+	border-radius: 18px;
+}
+
+.video_embed_wrap iframe {
+	width: 100%;
+	height: 520px;
+	border: 0;
+	border-radius: 12px;
+	display: block;
+}
+
+/* FORMAT */
+.game_format_section {
+	padding-bottom: 100px;
+}
+
+.format_cards {
+	display: flex;
+	gap: 24px;
+}
+
+.format_card {
+	width: 100%;
+	padding: 28px;
+	border-radius: 14px;
+}
+
+.format_card h3 {
+	font-size: 18px;
+	margin: 0 0 14px 0;
+	letter-spacing: 1px;
+}
+
+.format_card p {
+	color: var(--footerTextColour);
+	font-size: 15px;
+	line-height: 1.8;
+	margin: 0;
+}
+
+/* ROOM INFO */
+.game_room_section {
+	padding-bottom: 100px;
+}
+
+.game_room_content {
+	display: flex;
+	gap: 36px;
+	align-items: flex-start;
+}
+
+.game_room_text {
+	width: 58%;
+}
+
+.game_room_text h2 {
+	color: var(--allTextColour);
+	font-size: 34px;
+	margin: 0 0 20px 0;
+}
+
+.game_room_text p {
+	color: var(--footerTextColour);
+	font-size: 16px;
+	line-height: 1.9;
+	margin: 0 0 18px 0;
+}
+
+.game_room_text ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.game_room_text ul li {
+	color: var(--footerTextColour);
+	font-size: 15px;
+	line-height: 1.8;
+	margin-bottom: 10px;
+}
+
+.game_room_card {
+	width: 42%;
+	padding: 30px;
+	border-radius: 16px;
+}
+
+.game_room_card h3 {
+	font-size: 20px;
+	margin: 0 0 18px 0;
+	letter-spacing: 1px;
+}
+
+.game_room_card p {
+	color: var(--footerTextColour);
+	font-size: 15px;
+	line-height: 1.8;
+	margin: 0 0 12px 0;
+}
+
+/* CTA */
+.game_cta_section {
+	text-align: center;
+	padding: 40px 0 120px;
+}
+
+.game_cta_section h2 {
+	color: var(--allTextColour);
+	font-size: 34px;
+	margin: 0 0 16px 0;
+	letter-spacing: 1px;
+}
+
+.game_cta_section p {
+	color: var(--footerTextColour);
+	font-size: 16px;
+	line-height: 1.8;
+	margin: 0 0 28px 0;
+}
+
+.game_cta_button {
+	display: inline-block;
+	padding: 16px 28px;
+	border-radius: 10px;
+	font-weight: 800;
+	font-size: 15px;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	background: var(--primaryColour);
+	color: var(--buttonTextColour);
+	transition: 0.3s ease;
+}
+
+/* // INDIVIDUAL GAME PAGES ********************/
+
+
+/* // MAIN SECTION ********************/
+
+
+
+
+
+
+
+
+
+
+
+/******************** / FOOTER SECTION */
+
+footer {
+	background: url(../graphics/footer/bg_footer.png) repeat-x top;
+	height: 70px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.footer_section_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer_logo_container img {
+	height: 25px;
+	width: auto;
+	object-fit: cover;
+}
+
+.footer_icons_container ul li {
+	display: flex;
+	align-items: center;
+}
+
+.footer_navbar_links_container ul li a {
+	color: var(--footerTextColour);
+	text-transform: capitalize;
+	font-size: 11px;
+}
+
+.footer_icons_container {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+
+.footer_icons_container img {
+	height: 25px;
+	width: auto;
+	object-fit: cover;
+}
+
+.copy_container {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.copy_container a {
+	display: flex;
+	align-items: center;
+}
+
+.copy_container img {
+	height: 35px;
+	width: auto;
+	object-fit: cover;
+}
+
+.copy_container p {
+	font-size: 9px;
+	color: var(--footerTextColour);
+	margin: 0;
+}
+
+.copy_container p span {
+	display: block;
+}
+
+/* // FOOTER SECTION ********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DO NOT WRITE ANYTHING ABOVE */
+
+
+
+
+
+
+
+
+
+
+
+/* HAFEESAH'S CODE HERE ------------------- START */
+
+
+/* HAFEESAH'S CODE HERE ------------------- FINISH */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* YORGOS'S CODE HERE ------------------- START */
+
+
+/* YORGOS'S CODE HERE ------------------- FINISH */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* YORGOS'S CODE HERE ------------------- START */
+
+
+/* YORGOS'S CODE HERE ------------------- FINISH */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ZAHRAA'S CODE HERE ------------------- START */
+
+
+/* ZAHRAA'S CODE HERE ------------------- FINISH */
