@@ -1420,6 +1420,212 @@ margin: 0;
 /* // INDIVIDUAL GAME PAGES ********************/
 
 
+
+
+
+
+
+
+
+
+
+
+/******************** / ABOUT COMPANY PAGE */
+
+/* HERO */
+.about_company_hero {
+	text-align: center;
+	padding: 90px 0 70px;
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.about_company_hero h1 {
+	color: white;
+	font-size: 42px;
+	margin-bottom: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.about_company_hero p {
+	color: rgba(255,255,255,0.75);
+	font-size: 17px;
+	line-height: 1.8;
+}
+
+/* COMPANY */
+.about_company_section {
+	padding-bottom: 100px;
+}
+
+.about_company_content {
+	display: flex;
+	gap: 36px;
+}
+
+.about_company_text {
+	width: 60%;
+}
+
+.about_company_text h2 {
+	color: white;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.about_company_text p {
+	color: rgba(255,255,255,0.8);
+	line-height: 1.9;
+}
+
+.about_company_card {
+	width: 40%;
+	background: linear-gradient(145deg, #1f1a1d, #2a2226);
+	padding: 30px;
+	border-radius: 16px;
+}
+
+.about_company_card h3 {
+	color: var(--primaryColour);
+	margin-bottom: 15px;
+}
+
+.about_company_card li {
+	color: rgba(255,255,255,0.8);
+	margin-bottom: 10px;
+}
+
+/* SERVICES */
+.about_services_section {
+	padding-bottom: 100px;
+}
+
+.services_grid {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.service_card {
+	width: calc(50% - 12px);
+	background: linear-gradient(145deg, #1f1a1d, #2a2226);
+	padding: 28px;
+	border-radius: 14px;
+	transition: 0.3s;
+}
+
+.service_card:hover {
+	transform: translateY(-5px);
+}
+
+.service_card h3 {
+	color: var(--primaryColour);
+	margin-bottom: 10px;
+}
+
+.service_card p {
+	color: rgba(255,255,255,0.75);
+}
+
+/* STATS */
+.about_stats_section {
+	padding-bottom: 100px;
+}
+
+.stats_grid {
+	display: flex;
+	gap: 24px;
+}
+
+.stat_card {
+	width: 100%;
+	background: linear-gradient(145deg, #1f1a1d, #2a2226);
+	padding: 30px;
+	text-align: center;
+	border-radius: 14px;
+}
+
+.stat_card h2 {
+	color: var(--primaryColour);
+	font-size: 32px;
+	margin: 0 0 10px 0;
+}
+
+.stat_card p {
+	color: rgba(255,255,255,0.75);
+}
+
+/* PARTNERS */
+.about_partners_section {
+	padding-bottom: 100px;
+}
+
+.partners_grid {
+	display: flex;
+	gap: 24px;
+}
+
+.partner_card {
+	width: 100%;
+	padding: 40px;
+	text-align: center;
+	background: linear-gradient(145deg, #1f1a1d, #2a2226);
+	border-radius: 14px;
+	color: white;
+	font-weight: bold;
+}
+
+/* TEAM */
+.about_team_section {
+	padding-bottom: 100px;
+}
+
+.team_card {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	background: linear-gradient(145deg, #1f1a1d, #2a2226);
+	padding: 30px;
+	border-radius: 16px;
+}
+
+.team_card h3 {
+	color: var(--primaryColour);
+}
+
+.team_card p {
+	color: white;
+	font-weight: bold;
+}
+
+.team_card span {
+	color: rgba(255,255,255,0.7);
+}
+
+/* CTA */
+.about_cta_section {
+	text-align: center;
+	padding-bottom: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* // MAIN SECTION ********************/
 
 
