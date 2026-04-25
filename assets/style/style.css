@@ -1554,7 +1554,45 @@ footer {
 
 
 /* HAFEESAH'S CODE HERE ------------------- START */
+.super_smash_hero{
+	position: relative;
+    margin: 50px auto; /* centers horizontally */
+	text-align: center;
+}
+.super_smash_hero img{
+	width: 50%;
+	height: auto;
+}
+.super_smash_details{
+	position: absolute;
+    bottom: 5px;       /* move text to bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: white;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+    padding: 5px 10px;
+}
+.super_smash_details h1{
+	right:10px;
+	text-align: left;
+}
 
+.competition-paragraph{
+	text-align: left;
+}
+.competition_line{
+	background: #c5db3b;
+	right:10px;
+	text-align: center;
+	border-radius: 50px;
+	color:black;
+	width: 30%;
+	font-size:small;
+    font-weight: bold;
+	border: 2px solid black;
+}
 
 /* HAFEESAH'S CODE HERE ------------------- FINISH */
 
