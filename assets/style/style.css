@@ -1761,6 +1761,116 @@ footer {
 
 /* HAFEESAH'S CODE HERE ------------------- START */
 
+/* start of super smash hero section */
+.super_smash_hero{
+	position: relative;
+    margin: 50px auto; /* centers horizontally */
+	text-align: center;
+}
+.super_smash_hero img{
+	width: 50%;
+	height: auto;
+}
+.super_smash_details{
+	position: absolute;
+    bottom: 5px;       /* move text to bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: white;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+    padding: 5px 10px;
+}
+.super_smash_details h1{
+	right:10px;
+	text-align: left;
+}
+
+.competition-paragraph{
+	text-align: left;
+}
+.competition_line{
+	background: #c5db3b;
+	right:10px;
+	text-align: center;
+	border-radius: 50px;
+	color:black;
+	width: 30%;
+	font-size:small;
+    font-weight: bold;
+	border: 2px solid black;
+}
+/* end of super smash hero section */
+
+/* start of super smash event details */
+.smash_event_info {
+	padding: 60px 0;
+	position: relative;
+	width: 80%;
+	display: flex;
+	gap: 32px;
+	justify-content: center;
+	margin: 50px auto; 
+}
+
+.smash_event_info div {
+	padding: 30px;
+	border-radius: 12px;
+	width: 250px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+	text-align: center;
+	background-color: #171316;
+}
+
+.smash_event_info div h3 {
+	letter-spacing: 1px;
+	margin: 18px 0 10px 0;
+	font-weight: 600;
+	font-size: 18px;
+	color: #c5db3b;
+}
+
+.smash_event_info div p {
+	color: var(--allTextColour);
+	font-size: 16px;
+	margin: 0;
+	color: #ffffff;
+}
+
+.super_smash_about {
+    display: flex;              /* puts them side by side */
+    justify-content: center;    /* centers horizontally */
+    align-items: flex-start;        /* aligns nicely vertically */
+    gap: 36px;                 /* space between text and image */
+    margin: 50px auto;
+    max-width: 1000px;         /* keeps it nicely contained */
+}
+
+.smash_about_info {
+    width: 50%;
+	color:#ffffff;
+	margin-top: 30px; /* pushes text slightly down */
+}
+
+.smash_about_image {
+    width: 50%;
+	height: 700px; /* adjust height */
+}
+
+.smash_about_image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+
 
 /* HAFEESAH'S CODE HERE ------------------- FINISH */
 
