@@ -135,7 +135,8 @@ a {
 .nearby_intro h2,
 .booking_intro h2,
 .contact_map_intro h2,
-.section_heading h2 {
+.section_heading h2,
+.about_company_text h2 {
 	letter-spacing: 2px;
 	text-align: center;
 	color: var(--allTextColour);
@@ -151,7 +152,8 @@ a {
 .booking_intro p,
 .contact_hero p,
 .contact_map_intro p,
-.section_heading p {
+.section_heading p,
+.about_company_hero p {
 	font-size: 16px;
 	line-height: 1.7;
 	margin: 0;
@@ -176,7 +178,12 @@ a {
 .format_card,
 .game_room_card,
 .gallery_item,
-.video_embed_wrap {
+.video_embed_wrap,
+.service_card,
+.about_company_card,
+.stat_card,
+.partner_card,
+.team_card {
 	background: linear-gradient(145deg, #1f1a1d, #2a2226);
 }
 
@@ -260,6 +267,31 @@ a {
 }
 
 
+
+
+
+.about_services_section .section_heading,
+.about_partners_section .section_heading,
+.about_team_section .section_heading {
+	margin: 0 auto 32px;
+}
+
+.about_services_section .section_heading h2,
+.about_partners_section .section_heading h2,
+.about_team_section .section_heading h2 {
+	margin: 0 auto 16px;
+}
+
+
+
+
+
+.about_company_section,
+.about_stats_section,
+.about_partners_section,
+.about_team_section {
+	padding-bottom: 120px;
+}
 
 
 
@@ -652,7 +684,8 @@ main {
 	margin: 8px 0 0 0;
 }
 
-.location_button {
+.location_button,
+.location_button_secondary {
 	background-color: var(--primaryColour);
 	color: var(--buttonTextColour);
 	padding: 14px 22px;
@@ -661,13 +694,13 @@ main {
 	transition: 0.3s ease;
 }
 
-.location_button.secondary {
+.location_button_secondary {
 	background: transparent;
 	color: var(--allTextColour);
 	border: 1px solid rgba(255,255,255,0.15);
 }
 
-.location_button.secondary:hover {
+.location_button_secondary:hover {
 	border-color: rgba(197, 219, 59, 0.4);
 	color: var(--primaryColour);
 }
@@ -1112,7 +1145,7 @@ margin: 0;
 /******************** / INDIVIDUAL GAME PAGES */
 
 /* HERO */
-.game_page_hero {
+/* .game_page_hero {
 	height: 500px;
 	border-radius: 18px;
 	overflow: hidden;
@@ -1169,19 +1202,19 @@ margin: 0;
 	font-size: 17px;
 	line-height: 1.8;
 	margin: 0;
-}
+} */
 
 /* SHARED SECTION HEADING */
-.section_heading {
+/* .section_heading {
 	margin: 0 auto 45px;
 }
 
 .section_heading h2 {
 	margin: 0 0 14px 0;
-}
+} */
 
 /* QUICK INFO */
-.game_quick_info {
+/* .game_quick_info {
 	padding-bottom: 90px;
 }
 
@@ -1210,10 +1243,10 @@ margin: 0;
 	font-weight: 700;
 	margin: 0;
 	line-height: 1.5;
-}
+} */
 
 /* ABOUT */
-.game_about_section {
+/* .game_about_section {
 	padding-bottom: 100px;
 }
 
@@ -1252,10 +1285,10 @@ margin: 0;
 	border-radius: 16px;
 	display: block;
 	box-shadow: 0 18px 40px rgba(0,0,0,0.35);
-}
+} */
 
 /* GALLERY */
-.game_gallery_section {
+/* .game_gallery_section {
 	padding-bottom: 100px;
 }
 
@@ -1276,10 +1309,10 @@ margin: 0;
 	object-fit: cover;
 	border-radius: 12px;
 	display: block;
-}
+} */
 
 /* VIDEO */
-.game_video_section {
+/* .game_video_section {
 	padding-bottom: 100px;
 }
 
@@ -1294,10 +1327,10 @@ margin: 0;
 	border: 0;
 	border-radius: 12px;
 	display: block;
-}
+} */
 
 /* FORMAT */
-.game_format_section {
+/* .game_format_section {
 	padding-bottom: 100px;
 }
 
@@ -1323,10 +1356,10 @@ margin: 0;
 	font-size: 15px;
 	line-height: 1.8;
 	margin: 0;
-}
+} */
 
 /* ROOM INFO */
-.game_room_section {
+/* .game_room_section {
 	padding-bottom: 100px;
 }
 
@@ -1382,10 +1415,10 @@ margin: 0;
 	font-size: 15px;
 	line-height: 1.8;
 	margin: 0 0 12px 0;
-}
+} */
 
 /* CTA */
-.game_cta_section {
+/* .game_cta_section {
 	text-align: center;
 	padding: 40px 0 120px;
 }
@@ -1415,7 +1448,7 @@ margin: 0;
 	background: var(--primaryColour);
 	color: var(--buttonTextColour);
 	transition: 0.3s ease;
-}
+} */
 
 /* // INDIVIDUAL GAME PAGES ********************/
 
@@ -1441,24 +1474,14 @@ margin: 0;
 }
 
 .about_company_hero h1 {
-	color: white;
+	color: var(--allTextColour);
 	font-size: 42px;
 	margin-bottom: 16px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
 
-.about_company_hero p {
-	color: rgba(255,255,255,0.75);
-	font-size: 17px;
-	line-height: 1.8;
-}
-
 /* COMPANY */
-.about_company_section {
-	padding-bottom: 100px;
-}
-
 .about_company_content {
 	display: flex;
 	gap: 36px;
@@ -1469,9 +1492,9 @@ margin: 0;
 }
 
 .about_company_text h2 {
-	color: white;
-	font-size: 32px;
 	margin-bottom: 20px;
+	letter-spacing: normal;
+	text-align: left;
 }
 
 .about_company_text p {
@@ -1481,7 +1504,6 @@ margin: 0;
 
 .about_company_card {
 	width: 40%;
-	background: linear-gradient(145deg, #1f1a1d, #2a2226);
 	padding: 30px;
 	border-radius: 16px;
 }
@@ -1498,25 +1520,20 @@ margin: 0;
 
 /* SERVICES */
 .about_services_section {
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 }
+
+
 
 .services_grid {
 	display: flex;
 	gap: 24px;
-	flex-wrap: wrap;
 }
 
 .service_card {
-	width: calc(50% - 12px);
-	background: linear-gradient(145deg, #1f1a1d, #2a2226);
+	flex: 1;
 	padding: 28px;
 	border-radius: 14px;
-	transition: 0.3s;
-}
-
-.service_card:hover {
-	transform: translateY(-5px);
 }
 
 .service_card h3 {
@@ -1529,9 +1546,6 @@ margin: 0;
 }
 
 /* STATS */
-.about_stats_section {
-	padding-bottom: 100px;
-}
 
 .stats_grid {
 	display: flex;
@@ -1540,7 +1554,6 @@ margin: 0;
 
 .stat_card {
 	width: 100%;
-	background: linear-gradient(145deg, #1f1a1d, #2a2226);
 	padding: 30px;
 	text-align: center;
 	border-radius: 14px;
@@ -1557,10 +1570,6 @@ margin: 0;
 }
 
 /* PARTNERS */
-.about_partners_section {
-	padding-bottom: 100px;
-}
-
 .partners_grid {
 	display: flex;
 	gap: 24px;
@@ -1570,28 +1579,23 @@ margin: 0;
 	width: 100%;
 	padding: 40px;
 	text-align: center;
-	background: linear-gradient(145deg, #1f1a1d, #2a2226);
 	border-radius: 14px;
 	color: white;
 	font-weight: bold;
 }
 
 /* TEAM */
-.about_team_section {
-	padding-bottom: 100px;
-}
-
 .team_card {
 	max-width: 400px;
 	margin: 0 auto;
 	text-align: center;
-	background: linear-gradient(145deg, #1f1a1d, #2a2226);
 	padding: 30px;
 	border-radius: 16px;
 }
 
 .team_card h3 {
 	color: var(--primaryColour);
+	margin: 0 auto 16px;
 }
 
 .team_card p {
@@ -1609,16 +1613,31 @@ margin: 0;
 	padding-bottom: 120px;
 }
 
+.about_cta_section h2 {
+	color: rgba(255,255,255,0.8);
+	font-weight: 500;
+	margin: 0 auto 16px;
+}
 
+.about_cta_section p {
+	color: rgba(255,255,255,0.4);
+	margin: 0 auto 36px;
+}
 
+.about_cta_button {
+	background: transparent;
+	color: var(--allTextColour);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 12px 24px;
+	border-radius: 8px;
+	transition: 0.3s ease;
+	font-size: 17px;
+}
 
-
-
-
-
-
-
-
+.about_cta_button:hover {
+	border-color: rgba(197, 219, 59, 0.4);
+	color: var(--primaryColour);
+}
 
 
 
