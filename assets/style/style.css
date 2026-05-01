@@ -1781,25 +1781,33 @@ footer {
 /* HAFEESAH'S CODE HERE ------------------- START */
 
 /* start of super smash hero section */
+
+
 .super_smash_hero{
 	position: relative;
     margin: 50px auto; /* centers horizontally */
 	text-align: center;
+	width:70%;
+	border-radius: 15px;
 }
 .super_smash_hero img{
-	width: 50%;
+	width: 70%;
 	height: auto;
+	border-radius: 15px;
 }
 .super_smash_details{
 	position: absolute;
     bottom: 5px;       /* move text to bottom */
     left: 50%;
     transform: translateX(-50%);
-    
+    width: 68%;
     color: white;
     font-size: 18px;
     background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
     padding: 5px 10px;
+	border-radius: 15px;
+	height: 50%;
+	line-height: 1.1;
 }
 .super_smash_details h1{
 	right:10px;
@@ -1808,6 +1816,8 @@ footer {
 
 .competition-paragraph{
 	text-align: left;
+	font-size: 17px;
+
 }
 .competition_line{
 	background: #c5db3b;
@@ -1818,7 +1828,7 @@ footer {
 	width: 30%;
 	font-size:small;
     font-weight: bold;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 /* end of super smash hero section */
 
@@ -1826,7 +1836,7 @@ footer {
 .smash_event_info {
 	padding: 60px 0;
 	position: relative;
-	width: 80%;
+	width: 70%;
 	display: flex;
 	gap: 32px;
 	justify-content: center;
@@ -1857,35 +1867,49 @@ footer {
 	color: #ffffff;
 }
 
-.super_smash_about {
-    display: flex;              /* puts them side by side */
-    justify-content: center;    /* centers horizontally */
-    align-items: flex-start;        /* aligns nicely vertically */
-    gap: 36px;                 /* space between text and image */
-    margin: 50px auto;
-    max-width: 1000px;         /* keeps it nicely contained */
-}
+/* smash about section */
+.smash_about_section{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 40px;
+	margin: 80px auto;
+	max-width: 1100px;
 
-.smash_about_info {
-    width: 50%;
+}
+.smash_about_content{
+	width: 50%;
 	color:#ffffff;
-	margin-top: 30px; /* pushes text slightly down */
+}
+.smash_about_content h2{
+	font-size: 28px;
+	margin-bottom: 20px;
+	padding-top: 30px;
+
+}
+.smash_about_content p{
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 15px;
 }
 
 .smash_about_image {
     width: 50%;
-	height: 700px; /* adjust height */
+	border-radius: 15px;
+	padding: 20px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	aspect-ratio: 1 / 1;
 }
 
 .smash_about_image img {
     width: 100%;
     height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	display: block;
 
 }
-
-
-
-
 
 
 
