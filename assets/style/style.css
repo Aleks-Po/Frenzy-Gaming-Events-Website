@@ -173,7 +173,7 @@ a {
 .contact_map_wrap,
 .support_card,
 .contact_form_wrap,
-.event_grid div,
+.event_grid .event_grid_card_wrap,
 .game_quick_card,
 .format_card,
 .game_room_card,
@@ -527,7 +527,7 @@ main {
 	justify-content: center;
 }
 
-.event_grid div {
+.event_grid .event_grid_card_wrap {
 	padding: 30px;
 	border-radius: 12px;
 	width: 250px;
@@ -535,14 +535,14 @@ main {
 	text-align: center;
 }
 
-.event_grid div h3 {
+.event_grid .event_grid_card_wrap div h3 {
 	letter-spacing: 1px;
 	margin: 18px 0 10px 0;
 	font-weight: 600;
 	font-size: 18px;
 }
 
-.event_grid div p {
+.event_grid .event_grid_card_wrap div p {
 	color: var(--allTextColour);
 	font-size: 16px;
 	margin: 0;
@@ -1767,6 +1767,21 @@ footer {
 
 
 
+	.header_content,
+	.footer_section,
+	main,
+	.hero_overlay_container_wrapper {
+		margin: 0 16px;
+	}
+
+
+
+
+
+
+
+
+
 
 	.header_content,
 	.footer_section,
@@ -1776,10 +1791,52 @@ footer {
 	}
 
 
+
+
+
+
+
+
+
+
+	.header_content_wrap,
+	.hero_overlay_container {
+		padding: 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.event_info::after, 
+	.games_preview::after, 
+	.location_section::after, 
+	.nearby_section::after {
+		width: 80px;
+		margin: 26px auto 0;
+	}
+
+
+
+
+
+
+
+
+
 	.header_content_wrap {
 		flex-direction: column;
 		gap: 18px;
 	}
+
+
+
 
 
 	.logo_container {
@@ -1787,16 +1844,17 @@ footer {
 	}
 
 
+
+
+
 	.navbar_links_container {
 		justify-content: flex-end;
 	}
-
 
 	.navbar_links_container ul, 
 	.footer_navbar_links_container ul {
 		gap: 8px;
 	}
-
 
 	.navbar_links_container ul li a {
 		padding: 6px 8px;
@@ -1804,13 +1862,9 @@ footer {
 		letter-spacing: normal;
 	}
 
-	.hero_overlay_container_wrapper {
-		margin: 0 16px;
-	}
 	
-	.hero_overlay_container {
-		padding: 0;
-	}
+	
+
 
 	.hero_overlay {
 		padding: 32px 16px;
@@ -1818,6 +1872,7 @@ footer {
 
 	.hero_overlay h1 {
 		font-size: 26px;
+		font-weight: 600;
 	}
 
 	.hero_overlay p {
@@ -1833,27 +1888,112 @@ footer {
 
 
 
+	.event_info h2 {
+		text-align: left;
+		font-size: 28px;
+		letter-spacing: 1px;
+		font-weight: 500;
+		margin: 0 auto 40px;
+	}
 
+	.event_grid {
+		flex-direction: column;
+	}
 
+	.event_grid .event_grid_card_wrap {
+		width: 100%;
+		padding: 0;
+	}
 
+	.event_grid .event_grid_card_wrap div {
+		padding: 24px;
+		text-align: left;
+	}
 
-
-
-
-	.connecting_step {
-		display: none;
+	.event_grid .event_grid_card_wrap div h3 {
+		margin: 0 auto 10px;
+		font-size: 16px;
+		font-weight: 700;
 	}
 
 
 
-	.main_section {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* .connecting_step {
 		display: none;
-	}
+	} */
+
+
+
+	/* .main_section {
+		display: none;
+	} */
 
 
 	/* .slider_wrap {
 		display: none;
 	} */
+
+
+	.games_preview,
+	.location_section,
+	.nearby_section,
+	.booking_section {
+		display: none;
+	}
+
 
 
 
