@@ -425,20 +425,24 @@ a {
 	background: linear-gradient( to right, rgba(22, 22, 20, 1) 25%, rgba(255, 255, 255, 1) 75%);
 }
 
-.hero_overlay_container {
+.hero_overlay_container_wrapper {
 	position: relative;
 	z-index: 10;
 	top: 55%;
 }
 
-.hero_overlay {
+.hero_overlay_container {
 	background-color: rgba(69, 52, 59, 0.8);
 	padding: 32px;
 	color: #ffffff;
+}
+
+.hero_overlay {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
 }
+
 
 .hero_overlay h1 {
 	margin: 16px 0 0 0;
@@ -1736,6 +1740,139 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** / MEDIA QERIES SECTION */
+
+
+@media (max-width: 576px) {
+	
+	/* body {
+		background-color: transparent;
+	} */
+
+
+
+
+	.header_content,
+	.footer_section,
+	.main_section,
+	.hero_overlay_container {
+		width: 100%;
+	}
+
+
+	.header_content_wrap {
+		flex-direction: column;
+		gap: 18px;
+	}
+
+
+	.logo_container {
+		height: 20px;
+	}
+
+
+	.navbar_links_container {
+		justify-content: flex-end;
+	}
+
+
+	.navbar_links_container ul, 
+	.footer_navbar_links_container ul {
+		gap: 8px;
+	}
+
+
+	.navbar_links_container ul li a {
+		padding: 6px 8px;
+		font-size: 15px;
+		letter-spacing: normal;
+	}
+
+	.hero_overlay_container_wrapper {
+		margin: 0 16px;
+	}
+	
+	.hero_overlay_container {
+		padding: 0;
+	}
+
+	.hero_overlay {
+		padding: 32px 16px;
+	}
+
+	.hero_overlay h1 {
+		font-size: 26px;
+	}
+
+	.hero_overlay p {
+		font-weight: 300;
+		line-height: 1.5;
+	}
+
+	.hero_overlay a {
+		padding: 9px 22px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	.connecting_step {
+		display: none;
+	}
+
+
+
+	.main_section {
+		display: none;
+	}
+
+
+	/* .slider_wrap {
+		display: none;
+	} */
+
+
+
+	footer,
+	.footer_section {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* // MEDIA QERIES SECTION ********************/
 
 
 
