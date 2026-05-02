@@ -1848,12 +1848,17 @@ footer {
 	.games_preview h2,
 	.location_intro h2,
 	.nearby_intro h2,
-	.booking_intro h2 {
+	.booking_intro h2,
+	.about_company_hero h1,
+	.about_company_text h2,
+	.about_services_section .section_heading h2,
+	.about_partners_section .section_heading h2,
+	.about_team_section .section_heading h2 {
 		text-align: left;
 		font-size: 28px;
 		letter-spacing: 1px;
 		font-weight: 500;
-		margin: 0 auto 18px;
+		margin: 0 auto 16px;
 	}
 
 
@@ -1867,7 +1872,11 @@ footer {
 
 	.location_intro p,
 	.nearby_intro p,
-	.booking_intro p {
+	.booking_intro p,
+	.about_company_hero p,
+	.about_company_text p,
+	.about_services_section .section_heading p,
+	.about_partners_section .section_heading p {
 		text-align: left;
 		line-height: 1.5;
 	}
@@ -1878,13 +1887,6 @@ footer {
 
 
 
-
-
-
-	.event_grid,
-	.games_grid {
-		flex-direction: column;
-	}
 	
 	
 
@@ -1908,9 +1910,18 @@ footer {
 
 
 
-
+	.event_grid,
+	.games_grid,
 	.location_content,
-	.booking_content {
+	.booking_content,
+	.header_content_wrap,
+	.location_links,
+	.nearby_cards,
+	.booking_form .form_row,
+	.about_company_content,
+	.about_services_section .services_grid,
+	.about_stats_section .stats_grid,
+	.partners_grid {
 		flex-direction: column;
 	}
 
@@ -1924,7 +1935,12 @@ footer {
 
 
 	.booking_highlight,
-	.booking_form_wrap {
+	.booking_form_wrap,
+	.about_company_card,
+	.event_grid .event_grid_card_wrap div,
+	.nearby_cards .nearby_card,
+	.about_services_section .services_grid .service_card,
+	.about_stats_section .stats_grid .stat_card {
 		padding: 24px;
 	}
 
@@ -1938,7 +1954,11 @@ footer {
 
 
 	.booking_info,
-	.booking_form_wrap {
+	.booking_form_wrap,
+	.map_container_wrap,
+	.about_company_card,
+	.about_stats_section .stats_grid .stat_card,
+	.partner_card {
 		width: auto;
 	}
 
@@ -1980,8 +2000,37 @@ footer {
 
 
 
+	.location_info,
+	.about_company_text {
+		width: 100%;
+	}
+
+
+
+
+
+
+
+
+
+
+	.about_company_section,
+	.about_stats_section,
+	.about_partners_section,
+	.about_team_section {
+		padding: 0 0 90px 0;
+	}
+
+
+
+
+
+
+
+
+
+
 	.header_content_wrap {
-		flex-direction: column;
 		gap: 18px;
 	}
 
@@ -2048,7 +2097,6 @@ footer {
 	}
 
 	.event_grid .event_grid_card_wrap div {
-		padding: 24px;
 		text-align: left;
 	}
 
@@ -2081,18 +2129,8 @@ footer {
 
 	
 	
-	.location_info {
-		width: 100%;
-	}
-
 	.location_links {
-		flex-direction: column;
 		text-align: center;
-	}
-
-
-	.map_container_wrap {
-		width: auto;
 	}
 
 	.map_container {
@@ -2118,13 +2156,8 @@ footer {
 		letter-spacing: normal;
 	}
 
-	.nearby_cards {
-		flex-direction: column;
-	}
-
 	.nearby_cards .nearby_card {
 		width: auto;
-		padding: 24px;
 	}
 
 	.nearby_cards .nearby_card h4 {
@@ -2149,12 +2182,66 @@ footer {
 		margin: 0 auto 16px;
 	}
 
-	.booking_form .form_row {
-		flex-direction: column;
-	}
-
 	.booking_button {
 		font-weight: 700;
+	}
+
+
+
+
+
+	.about_company_hero {
+		padding: 60px 0;
+	}
+
+	.about_company_content {
+		gap: 32px;
+	}
+
+	.about_company_text {
+		padding: 40px 0 0 0;
+	}
+
+	.about_company_text p {
+		color: var(--footerTextColour);
+	}
+
+	.about_company_card ul {
+		padding: 0 0 0 16px;
+		margin: 0;
+	}
+
+	.about_services_section .services_grid .service_card h3 {
+		margin-bottom: 0;
+	}
+
+	.about_stats_section .stats_grid .stat_card {
+		text-align: left;
+	}
+
+	.about_stats_section .stats_grid .stat_card h2 {
+		margin: 0;
+		font-size: 28px;
+	}
+
+	.about_stats_section .stats_grid .stat_card p {
+		margin-top: 8px;
+	}
+
+	.about_partners_section .partners_grid .partner_card {
+		padding: 40px 24px;
+		text-align: left;
+	}
+
+	.about_team_section .team_card {
+		padding: 30px 24px;
+		margin: 0;
+		text-align: left;
+		max-width: 100%;
+	}
+
+	.about_cta_section a {
+		font-size: 16px;
 	}
 
 
@@ -2175,7 +2262,6 @@ footer {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, max-content);
 		row-gap: 20px;
-		column-gap: 40px;
 	}
 	.footer_logo_container {
 		display: flex;
@@ -2209,6 +2295,24 @@ footer {
 		grid-area: 3 / 1 / 4 / 3;
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
 
 }
 
